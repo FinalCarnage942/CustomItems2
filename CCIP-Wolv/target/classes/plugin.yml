@@ -1,0 +1,8 @@
+name: CCIPWolv
+version: 1.0
+main: me.Carnage.cCIPWolv.CCIPWolv
+api-version: 1.21
+commands:
+  CCIPWolv:
+    description: Main command for CCIPWolv plugin
+    usage: /ccipwolv

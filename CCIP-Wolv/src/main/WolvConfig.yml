@@ -1,0 +1,151 @@
+# CCIPWolv Configuration
+
+# General Settings
+general:
+  # Default cooldown time for all abilities (in seconds)
+  default-cooldown: 120
+  # Default effect duration (in ticks)
+  default-effect-duration: 2400
+  # Falling block settings
+  falling-block:
+    speed: 0.7 # Speed for falling blocks
+    width: 4   # Width for area effect of falling blocks
+
+# Item Settings
+items:
+  GOAT_HORN:
+    name: "§b§lWolf Scream"
+    description:
+      - "§7The eternal howl of a mystical wolf,"
+      - "§7that has been cursed by an evil witch."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "BLINDNESS"
+        duration: 100 # Duration in ticks
+        amplifier: 1
+        message: "§bYou unleashed a Wolf Scream!"
+      - type: "KNOCKBACK"
+        strength: 5.0 # Knockback strength
+
+  END_CRYSTAL:
+    name: "§5§lHollow Purple"
+    description:
+      - "§8A powerful technique from Jujutsu Kaisen,"
+      - "§8that obliterates everything in its path."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "FALLING_BLOCK"
+        material: "PURPLE_STAINED_GLASS"
+        speed: 0.7 # Speed for falling block
+        width: 4 # Width for area effect
+        message: "§bYou unleashed the Hollow Purple!"
+
+  OBSIDIAN:
+    name: "§5§lObsidian Shard"
+    description:
+      - "§8A shard of obsidian imbued with dark power."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "STRENGTH"
+        duration: 2400 # Duration in ticks
+        amplifier: 2
+        message: "§2You feel empowered by the Obsidian Shard!"
+      - type: "SLOWNESS"
+        duration: 1200 # Duration in ticks
+        amplifier: 2
+
+  STICK:
+    name: "§6§lHealing Wand"
+    description:
+      - "§2A mystical wand from depths of the jungle,"
+      - "§2granting the sacred powers of an old tribe."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "REGENERATION"
+        duration: 2400 # Duration in ticks
+        amplifier: 1
+        message: "§2You feel a surge of energy from the Healing Wand!"
+      - type: "SPEED"
+        duration: 2400 # Duration in ticks
+        amplifier: 1
+
+  PRISMARINE_SHARD:
+    name: "§b§lPrismarine Pearl"
+    description:
+      - "§bA shimmering shard from the ocean,"
+      - "§bproviding the gift of water breathing."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "WATER_BREATHING"
+        duration: 2400 # Duration in ticks
+        amplifier: 1
+        message: "§2You can breathe underwater thanks to the Prismarine Pearl!"
+      - type: "DOLPHINS_GRACE"
+        duration: 2400 # Duration in ticks
+        amplifier: 1
+
+  GHAST_TEAR:
+    name: "§c§lHealing Tears"
+    description:
+      - "§fA tear shed by a ghast,"
+      - "§fknown for its healing properties."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "REGENERATION"
+        duration: 2400 # Duration in ticks
+        amplifier: 1
+        message: "§2You feel healed by the Ghast Tear!"
+      - type: "ABSORPTION"
+        duration: 2400 # Duration in ticks
+        amplifier: 2
+
+  SHULKER_SHELL:
+    name: "§d§lShulker Shell"
+    description:
+      - "§5A shell from a shulker,"
+      - "§5used to create unique potions."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "LEVITATION"
+        duration: 2400 # Duration in ticks
+        amplifier: 1
+        message: "§2You are levitating thanks to the Sh ulker Shell!"
+
+  BLACK_DYE:
+    name: "§5§lDragon Scale"
+    description:
+      - "§dA scale from a mighty dragon,"
+      - "§dproviding protection from fire."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "HASTE"
+        duration: 2400 # Duration in ticks
+        amplifier: 2
+        message: "§2You feel the power of the Ender Dragon in your hands!"
+
+  BLAZE_ROD:
+    name: "§e§lStrengthen BlazeRod"
+    description:
+      - "§6A rod from a blaze,"
+      - "§6granting strength to its wielder."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "STRENGTH"
+        duration: 2400 # Duration in ticks
+        amplifier: 1
+        message: "§2You feel stronger with the Blaze Rod!"
+      - type: "FIRE_RESISTANCE"
+        duration: 2400 # Duration in ticks
+        amplifier: 1
+
+  CHORUS_FRUIT:
+    name: "§a§lChorus Fruit of Floating"
+    description:
+      - "§7A fruit from the End,"
+      - "§7allowing you to float gently."
+    cooldown: 120 # Cooldown time in seconds
+    effects:
+      - type: "SLOW_FALLING"
+        duration: 600 # Duration in ticks
+        amplifier: 1
+        message: "§2You are floating gently thanks to the Chorus Fruit!"
