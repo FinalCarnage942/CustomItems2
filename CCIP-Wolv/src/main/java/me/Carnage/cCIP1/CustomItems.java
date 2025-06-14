@@ -31,11 +31,11 @@ public class CustomItems {
                 itemMeta = createItemMeta(configManager.getItemName(Material.END_CRYSTAL), configManager.getItemDescription(Material.END_CRYSTAL));
                 break;
             case "blueorb":
-                material = Material.BLUE_DYE; // Use an appropriate material
+                material = Material.BLUE_DYE;
                 itemMeta = createItemMeta(configManager.getItemName(Material.BLUE_DYE), configManager.getItemDescription(Material.BLUE_DYE));
                 break;
             case "redorb":
-                material = Material.RED_DYE; // Use an appropriate material
+                material = Material.RED_DYE;
                 itemMeta = createItemMeta(configManager.getItemName(Material.RED_DYE), configManager.getItemDescription(Material.RED_DYE));
                 break;
             default:
